@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #e91e63;
+}
+
+.btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #d81b60;
+}
+
+.hidden {
+    display: none;
+}
+
+#fireworks {
+    margin-top: 20px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Add animations */
+@keyframes moveBtn {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+#maybeBtn:hover {
+    animation: moveBtn 0.5s ease-in-out infinite;
+}
+
+/* Mind-blowing screen break animation */
+@keyframes explode {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(3); opacity: 0; }
+}
+
+.explode {
+    animation: explode 1s ease-out forwards;
+}

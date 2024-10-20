@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Crush?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Be My Crush?</h1>
+        <p>Wait... You've been invited to an <strong>Exclusive Proposal!</strong> But first, let's have some fun...</p>
+        <button id="startBtn" class="btn">Let me see!</button>
+        
+        <div id="quiz" class="quiz hidden">
+            <h2>Fun Quiz!</h2>
+            <p>What's the best way to make me smile?</p>
+            <button class="quizBtn">A) A meme</button>
+            <button class="quizBtn">B) Pizza delivery</button>
+            <button class="quizBtn">C) Just being you</button>
+
+            <p>If I were a cartoon character, who would I be?</p>
+            <button class="quizBtn">A) SpongeBob</button>
+            <button class="quizBtn">B) Superman</button>
+            <button class="quizBtn">C) Gru from Despicable Me</button>
+
+            <p>What should we do on our first real date?</p>
+            <button class="quizBtn">A) Watch a movie</button>
+            <button class="quizBtn">B) Go for ice cream</button>
+            <button class="quizBtn">C) Dance in the rain</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Congratulations! You’ve unlocked my secret...</h2>
+            <p>I have a crush on you!</p>
+            <button id="yesBtn" class="btn">YES</button>
+            <button id="maybeBtn" class="btn">MAYBE</button>
+        </div>
+
+        <div id="final" class="hidden">
+            <img src="https://media.giphy.com/media/QvpqTCiEcwtvxTfzTU/giphy.gif" alt="proposal gif">
+            <h2>So, how about it? Wanna make this thing official?</h2>
+            <p>Swipe right in real life?</p>
+            <div id="fireworks"></div>
+        </div>
+    </div>
+
+    <audio id="funnySound" src="https://www.myinstants.com/media/sounds/trolololololololol.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
